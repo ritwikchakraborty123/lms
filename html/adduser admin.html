@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Add User</title>
+
+<meta charset="UTF-8">
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+<style>
+	*box
+	{
+		box-sizing: border-box;
+	}
+
+
+body {
+  font-family:  Arial, Helvetica, sans-serif;
+  padding: 0px;
+  background: white;
+overflow: hidden;
+
+}
+.topnavx {
+  overflow: hidden;
+  background-color: #30742C;
+width:100%;
+margin-top: 20px;
+margin-bottom: 10px;
+padding:0 10px;
+
+}
+
+.topnavx a {
+  float: left;
+  color:white;
+  text-align: center;
+  font-size: 17px;
+  text-decoration:none;
+   font-size:20px;
+   padding-top:15px;
+   padding-bottom:10px;
+
+}
+
+.topnavx a:hover {
+
+   text-decoration:underline;
+  color: white;
+}
+
+.topnavx a.active {
+padding-top:8px;
+  font-size:180%;
+  color: white;
+}
+
+
+.box {
+  float: right;
+  width: 50%;
+  padding-left: 150px;
+margin-top:0%;
+  height: 400px;
+}
+
+/* Left-column */
+.left-column {
+  float: left;
+  width: 95%;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#can1
+{
+
+  height:200px;
+  width:200px;
+margin-left:10%;
+margin-bottom:5%;
+  border:solid 1px;
+  border-radius:0px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,2.5);
+}
+
+.y{
+margin-left:80px;
+margin-top:20px;
+}
+.col-25 {
+  float: left;
+  width: 12%;
+  margin-top: 6px;
+margin-left: 50px;
+}
+
+
+
+input[type=text],input[type=email],input[type=password],select {
+  width: 30%;
+  padding: 12px 10px;
+  margin: 4px 0px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:15px;
+}
+
+textarea{
+width:30%;
+height:20%;
+border:2px solid #ccc;
+border-radius:4px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: #43BE31;
+margin-left:10%;
+}
+
+
+
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-green w3-small" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();" style="float:left;"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-animate-left" style="float: right;"><img src="sbfc.png"width=70%></span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://assets.entrepreneur.com/content/3x2/1300/20150406145944-dos-donts-taking-perfect-linkedin-profile-picture-selfie-mobile-camera-2.jpeg" class="w3-circle w3-margin-right" style="height:80px;width:70px;margin-top: 20px;">
+    </div>
+    <div class="w3-col s8 w3-bar">
+     <h4 style="padding-top:
+     10px;"> <span>Welcome, <strong>Pranavesh Shenoy</strong></span><br></h4>
+
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <h4 style="font-size: 17px;"><a href="#" class="w3-bar-item w3-button w3-padding "><i class="fa fa-pie-chart"></i>Home</a></h4>
+    <h4 style="font-size: 17px;"><a href="LMS.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw"></i>  Account</a></h4>
+   <h4 style="font-size: 17px;"> <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-comments"></i>  Messages</a></h4>
+   <h4 style="font-size: 17px;"> <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out"></i>  Logout</a></h4>
+
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <div class="topnavx">
+  <a href="#home"> Home</a>
+  <a href="#">/</a>
+  <a href="#Users"> Users</a>
+  <a href="#">/</a>
+  <a class="active" href="#"> Add User</a>
+<a href="#" style="float:right;margin-right:20px;"><button style='font-size:15px;border-radius:100px;font-size:20px;color: green;border:none;background-color:#4CAF50;margin-right:5px;'><i class='fas fa-info'></i></button>About Home</a>
+</div>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+  <script src="Profile script.js"></script>
+<div class="row">
+  <div class="left-column">
+
+  <h1 style="color:#4CAF50; padding-left: 40px;">Add User</h1></div></div>
+
+
+<!--
+<div class="box" style="background-color:transparent;">
+<h2>Upload Profile picture:</h2>
+   <canvas id="can1">
+
+   </canvas>
+
+   <input type="file" multiple="false" accept="image/*" id="fginput"
+                           onchange="loadforegroundimage()" style="float:left;margin-left:10%;">
+  </div>
+
+-->
+<form action="">
+<div class="col-25">
+  <label for="fname">First name:</label></div>
+
+  <input type="text" id="fname" name="fname" placeholder="Ex:John" autofocus><br>
+<div class="col-25">
+  <label for="lname">Last name:</label></div>
+  <input type="text" id="lname" name="lname" placeholder="Ex:Doe"><br>
+<div class="col-25">
+  <label for="email">Email Address:</label></div>
+  <input type="email" id="email" name="email" placeholder="Ex:Johndoe123@gmail.com"><br>
+<div class="col-25">
+<label for="uname">Username:</label></div>
+  <input type="text" id="uname" name="uname" placeholder="Ex:JohnDoe_123"><br>
+<div class="col-25">
+<label for="password">Password:</label></div>
+
+  <input type="password" id="password" name="password" placeholder="Try to avoid simple passwords"><br>
+<div class="col-25">
+<label for="bio">Bio:</label></div>
+  <textarea type="textarea" id="bio" name="bio" placeholder="Short description upto 800 characters" style="font-family:sans-serif;"></textarea><br>
+<div class="col-25">
+<label for="usertype">User Type:</label></div>
+ <div class="myDIV"><select id="usertype" name="usertype">
+    <option value="learner">Learner-Type</option>
+    <option value="administrator">Administrator-Type</option>
+  </select>
+
+<button style='font-size:15px;border-radius:60px;color:grey;width:2.5%;background-color:white;'><i class='fas fa-info'></i></button></div>
+<div class="hide">Control the user's permissions by assigning them to a custom user type.</div>
+
+<div class="col-25">
+<label for="language">Language:</label></div>
+ <select id="language" name="language">
+    <option value="english">English</option>
+    <option value="hindi">Hindi</option>
+  </select>
+<br>
+<div class="y">
+<input type="checkbox" id="active" name="active" value="active">
+  <label for="active"> Active</label><br>
+  <input type="checkbox" id="deactive" name="deactive" value="deactive">
+  <label for="deactive"> Deactive at...</label><br></div>
+  <div class="myDIV"><input type="checkbox" id="ex-mails" name="ex-mails" value="ex-mails" style="margin-left:80px;">
+  <label for="ex-mails"> Exclude from emails</label>
+<button style='font-size:12px;border-radius:20px;color:grey;width:2.5%;background-color:white;'><i class='fas fa-info'></i></button><br>
+</div>
+<div class="hide" style="margin-left:50px;">Check if you'd like to exclude user from all automated notifications,except for essential system emails(i.e.,password and username reset).</div>
+
+<input type="submit" value="Add User" onclick="alert('Do you want to add this User')" style="border-radius:20px;
+background-color:#45CE30;
+margin-left:120px;
+margin-top:40px;
+margin-bottom:40px;
+font-size:20px;
+width:20%;padding:15px;
+border:none;outline:none;color:#fff;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5),0 17px 50px 0 rgba(0,0,0,0.19);">
+<button type="reset" onclick="alert('Do you want to cancel')" style="border-radius:20px;
+background-color:#45CE30;
+margin-left:120px;
+margin-top:40px;
+margin-bottom:40px;
+font-size:20px;
+width:20%;padding:15px;
+border:none;outline:none;color:#fff;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5),0 17px 50px 0 rgba(0,0,0,0.19);">Cancel</button>
+</form>
+</div>
+
+<script src="Profile script.js"></script>
+<script>
+var fgImage=null;
+var canvas1=null;
+
+function loadforegroundimage()
+{
+  canvas1=document.getElementById("can1");
+  var fgfile=document.getElementById("fginput");
+  fgImage=new SimpleImage(fgfile);
+  fgImage.drawTo(canvas1);
+}
+
+</script>
+
+
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script>
+      /* code by webdevtrick ( https://webdevtrick.com ) */
+$(function() {
+  $("#bars li .bar").each( function( key, bar ) {
+    var percentage = $(this).data('percentage');
+
+    $(this).animate({
+      'height' : percentage + '%'
+    }, 1000);
+  });
+});
+    </script>
+
+
+
+
+</body>
+</html>

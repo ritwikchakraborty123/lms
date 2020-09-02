@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+:root{
+--main-font:'pacifico',cursive;
+}
+
+html{
+background-color:#fff;
+font-family:sans-serif;}
+
+header{
+height:100vh;
+width:100%;
+display:flex;
+background-size:cover;
+justify-content:center;
+align-items:center;
+user-select:none;
+}
+
+.main-header{text-align:center;}
+
+.main-header h2{
+font-size:3vw;
+font-family:'Roboto', sans-serif;
+color:#1d3056;
+margin:20px;
+}
+
+.main-header h3{
+margin:20px;
+color:#90774f;
+font-size:1.7vw;
+}
+
+.main-header input{
+width:45%;
+padding:0.5rem;
+margin:10px 0px;
+font-size:1.3rem;
+border-radius:5px;
+background:#DAE0E2;
+border:#DAE0E2;
+outline:none;
+}
+
+.main-header p a:link,a:visited{
+ background-color:transparent;
+ color: white;
+ padding: 14px 25px;
+ text-align:center;
+ color:#333945;
+}
+
+.main-header p a:hover {
+  color: #90774f;
+}
+
+.main-header button{
+padding:0.5rem 7rem;
+font-size:1.2rem;
+background:#1d3056;
+color:#fff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+.main-header button:hover {
+  background-color: #90774f;
+  color: white;
+}
+::placeholder{color:white;}
+

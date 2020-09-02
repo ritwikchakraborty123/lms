@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- startbootstrap.com -->
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled javascript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+body {
+  background-color:#f5f5ef ;
+}
+.label {
+  color: black;
+  padding: 1px;
+  font-family: Arial;
+  font-size:20px;
+}
+.success {background-color;}
+
+.container-fluid {
+			  background-color: #4CAF50;
+			  padding: 5px 20px ;
+			}
+			/* Style the list */
+			ul.breadcrumb {
+			  background-color: #4CAF50;
+			}
+			/* Display list items side by side */
+			ul.breadcrumb li {
+			  display: inline;
+			  font-size: 18px;
+			}
+			/* Add a slash symbol (/) before/behind each list item */
+			ul.breadcrumb li+li:before {
+			  padding: 5px;
+			  color: white;
+			  content: "/\00a0";
+			}
+			/* Add a color to all links inside the list */
+			ul.breadcrumb li a {
+			  color: white;
+			  text-decoration: none;
+			}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  height:750px;
+  margin-top: 10px;
+  border:solid 1px #d9d9d9;
+  border-radius: 12px;
+  position: realative;
+  box-shadow: 2px 5px 20px rgba(119,119,119,10.5);
+}
+
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 80%;
+}
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+dd {
+  border: 1px ;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .first, .in ,.la , .da, .fa , .pa, .ti ,.us, .sp {
+     font-size: 15px;
+  }
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+</style>
+
+
+</style>
+
+
+</head>
+
+ <body>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+  <script src="Profile script.js"></script>
+
+
+<div class="container-fluid">
+			<ul class="breadcrumb">
+				<li><a href="admin.php">Home</a></li>
+        <li><a href="Display_course.php">Courses</a></li>
+				<li style="font-size:25px;"><a href="#">Add Courses</a></li>
+			</ul>
+		</div>
+
+  <form name="form" method="post" action="" class="" id="">
+
+<dd  style="margin-left:30">
+
+
+<span class="label success">Course name </span> &nbsp : &nbsp
+<input type="text"  style="width:400px;height:30px;"  name="course_name"  placeholder="e.g. Introduction to Accounting"  id=""></br> </br>
+
+<span class="label success">Description </span> &nbsp &nbsp : &nbsp &nbsp
+<textarea rows="10" cols="55" name="description" placeholder="Add a description of your course. Keep it clear and interesting for your learners."></textarea>
+</br> </br> &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="checkbox" >
+<span class="label success">Active </span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ <input type="checkbox" > <span class="label success">Hide from Catalog</span></br></br>
+
+
+<i class="far fa-play-circle" style="margin-left:150px; font-size:24px"></i> &nbsp &nbsp                <!-- button for uploading video -->
+<button style="background-color: #4CAF50;border: none;color: white; font-size:20px;" onclick="document.getElementById('id01').style.display='block'">
+ Add Video</button>
+
+<div id="id01" class="w3-modal">
+	<div class="w3-modal-content">
+		<header class="w3-container w3-teal">
+			<span onclick="document.getElementById('id01').style.display='none'"
+			class="w3-button w3-display-topright">&times;</span>
+			<h2>Add Video</h2>
+			</header>
+
+    <div class="w3-container">
+		<form method="post" enctype='multipart/form-data'>
+
+		<label for="video">Unit Name</label>
+		<input type="text" id="video" name="video" placeholder="Unit name..">
+		<label for="vid">Select video:</label>
+    <input type="file" id="vid" name="vid" accept="video/*">
+
+		<input type="submit" value="Submit">
+		</form>
+		</div>
+	</div>
+ </div>
+
+</br>
+</br>
+
+<i class="far fa-clock" style="margin-left:150px; font-size:24px" ; "color:black" ></i> &nbsp &nbsp
+<button style=" background-color: #4CAF50;border: none;color: white; font-size:20px;  cursor: pointer;"">Time limit&nbsp </button></br> </br>
+
+<i class="fas fa-award" style="margin-left:150px; font-size:24px"></i>&nbsp &nbsp &nbsp
+<button   style="background-color: #4CAF50;border: none;color: white; font-size:20px;""  target=""  >Certification </button>
+
+</br> </br> </br><input style="margin-left:150px;" type="submit" class="button" value="Submit">
+
+</form>
+<dd>
+<div>
+</body>
+
+</html>

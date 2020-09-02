@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- startbootstrap.com -->
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled javascript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<style>
+			.container-fluid {
+			  background-color: #4CAF50;
+			  padding: 5px 20px ;
+			}
+			/* Style the list */
+			ul.breadcrumb {
+			  background-color: #4CAF50;
+			}
+			/* Display list items side by side */
+			ul.breadcrumb li {
+			  display: inline;
+			  font-size: 18px;
+			}
+			/* Add a slash symbol (/) before/behind each list item */
+			ul.breadcrumb li+li:before {
+			  padding: 5px;
+			  color: white;
+			  content: "/\00a0";
+			}
+			/* Add a color to all links inside the list */
+			ul.breadcrumb li a {
+			  color: white;
+			  text-decoration: none;
+			}
+
+			/* Add user button */
+			.dropdowna {
+			  padding: 15px 20px;
+
+			}
+
+			/* Glyphicon */
+			.btn-group {
+			  float: right;
+			  position: relative;
+			}
+			.info {
+			  padding: 20px 20px;
+			}
+			.headings {
+			  background-color: #4CAF50;
+			  color: white;
+			}
+
+			/* Pagination */
+			.pagination {
+			  padding: 20px 20px;
+			}
+			.previous.disabled .page-link {
+			  color: white;
+			  background-color: #a6a6a6;
+			  pointer-events: none;
+			}
+			.icon {
+			  float: right;
+			  position: relative;
+			  padding: 50px 25px;
+			  word-spacing: 15px;
+
+			}
+
+			.dropbtn {
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: px;
+			  font-size: 0px;
+			  border: none;
+			}
+
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f1f1f1;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+
+			.dropdown-content a {
+			  color: black;
+			  padding: 12px 16px;
+			  text-decoration: none;
+			  display: block;
+			}
+
+			.dropdown-content a:hover {background-color: #ddd;}
+
+			.dropdown:hover .dropdown-content {display: block;}
+
+			.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+			.a{
+				background: #30742C;
+				color: white;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<ul class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li style="font-size:25px;"><a href="#">Users</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdowna">
+		<a href="#" class="btn a" role="button">Add User</a>
+		<div class="btn-group">
+			<button type="button" class="btn btn-default active">
+				<span class="glyphicon glyphicon-th"></span>
+			</button>
+			<button type="button" class="btn btn-default">
+				<span class="glyphicon glyphicon-th-list"></span>
+			</button>
+		</div>
+		</div>
+
+		<div class="info">
+			<table class="table">
+				<thead>
+					<tr class="headings" style="font-size: 15px;">
+						<th>USER</th>
+						<th>EMAIL</th>
+						<th>USER TYPE</th>
+						<th>REGISTRATION</th>
+						<th>LAST LOGIN</th>
+						<th>OPTIONS</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>P. Shenoy</td>
+						<td>pranavesh.shenoy@sbfc.com</td>
+						<td>SuperAdmin</td>
+						<td>1 hour ago</td>
+						<td>A few moments ago</td>
+						<td><div class="dropdown">
+							<button class="dropbtn"><i class="fa fa-ellipsis-h" aria-hidden="true" style="font-size: 16px;"></i></button>
+						  <div class="dropdown-content">
+						    <a href="#"><span style='font-size:20px;float: left'>&#9997;</span>Edit</a>
+						    <a href="#">Link 2</a>
+						    <a href="#">Link 3</a>
+						  </div>
+						</div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="pagination">
+			<ul class="pager">
+				<li class="previous disabled"><a class="page-link" href="#">1 to 1 of 1</a></li>
+			</ul>
+		</div>
+		<div class="icon">
+			<a href="#"><span class="glyphicon glyphicon-download-alt" style="font-size:20px; color:black;"></span></a>
+			<a href="#"><span class="glyphicon glyphicon-filter" style="font-size:20px; color:black;"></span></a>
+		</div>
+
+
+
+
+
+
+	</body>
+
+</html>

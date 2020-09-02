@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #fff;
+margin-top:20px;
+
+}
+.tab button {
+  background-color: white;
+  float: center;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: red;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color:red;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 17px 12px;
+  border-top: none;
+  text-align:center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background-color:#ccc;
+  border-radius:90px;
+  width:18px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#more {display: none;}
+
+button{
+background-color:#4169e1;
+padding:10px;
+border:none;
+}
+
+input[type=text]
+{
+padding:7px;
+margin:7px;
+}
+
+input[type=submit]
+{
+background-color:#003399;
+padding:20px;
+border-radius:10px;
+border:none;
+color:white;
+}
+
+input[type=submit]:hover{
+background-color:#001f9a;
+}
+</style>
+</head>
+<body style="text-align:center;">
+<h2>Select Question Type</h2>
+<div class="tab">
+<button class="tablinks" onclick="openCity(event, 'Today')" id="defaultOpen"><i class='fas fa-tasks' style='font-size:24px'></i><br>Multiple Choice</button>
+
+<button class="tablinks" onclick="openCity(event, 'Yesterday')"  style="padding:14px 35px;"><i class='fas fa-check' style='font-size:24px'></i> <i class='fas fa-times' style='font-size:24px'></i><br>True False</button>
+</div>
+
+<div id="Today" class="tabcontent">
+  <label for="question"><b>Question</b></label><br>
+<textarea id="question" rows="4" cols="50">
+  </textarea>
+  <br><br><b>Answers</b>
+  <div class="tooltip"><span style='font-size:20px;padding-left:3px;'>&#63;</span>
+  <span class="tooltiptext">Type atleast two answer options and select which answer/s are correct.</span>
+</div>
+<br><br>
+  <label for="ans1"><b>(A)</b></label>
+  <input type="checkbox" id="ans1" name="ans1" value="A">This answer option is correct<br>
+<textarea id="ans1"  rows="4" cols="50">
+  </textarea><br>
+  
+  <label for="ans2"><b>(B)</b></label>
+  <input type="checkbox" id="ans2" name="ans2" value="B">This answer option is correct<br>
+<textarea id="ans2" rows="4" cols="50">
+  </textarea><br>
+  
+  <label for="ans3"><b>(C)</b></label>
+  <input type="checkbox" id="ans3" name="ans3" value="C">This answer option is correct<br>
+<textarea id="ans3"  rows="4" cols="50">
+  </textarea><br>
+  
+  <label for="ans4"><b>(D)</b></label>
+  <input type="checkbox" id="ans4" name="ans4" value="D">This answer option is correct<br>
+<textarea id="ans4" rows="4" cols="50">
+  </textarea><br>
+  
+  <br><span id="dots"></span><span id="more"><label for="ans1"><b>(E)</b></label>
+  <input type="checkbox" id="ans5" name="ans5" value="E">This answer option is correct<br>
+<textarea id="ans5"  rows="4" cols="50">
+  </textarea><br>
+  
+  <label for="ans6"><b>(F)</b></label>
+  <input type="checkbox" id="ans6" name="ans6" value="F">This answer option is correct<br>
+<textarea id="ans6" rows="4" cols="50">
+  </textarea><br>
+  
+  <label for="ans7"><b>(G)</b></label>
+  <input type="checkbox" id="ans7" name="ans7" value="G">This answer option is correct<br>
+<textarea id="ans7"  rows="4" cols="50">
+  </textarea><br>
+  
+  <label for="ans8"><b>(H)</b></label>
+  <input type="checkbox" id="ans8" name="ans8" value="H">This answer option is correct<br>
+<textarea id="ans8" rows="4" cols="50">
+  </textarea><br>
+  
+  <br></span>
+<button onclick="myFunction()" id="myBtn" style="color:white;">Add more options</button>
+
+  <br><br><br>
+  <input type="submit" value="Save Question">
+</div>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Add more options"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Remove more options"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<div id="Yesterday" class="tabcontent">
+  <label for="question"><b>Question</b></label><br>
+<textarea id="question" rows="4" cols="50">
+  </textarea>
+  <br><br><b>Answers</b>
+  <div class="tooltip"><span style='font-size:20px;padding-left:3px;'>&#63;</span>
+  <span class="tooltiptext">You can use the default True or False text,or edit as required.</span>
+</div>
+<br><br>
+
+  <input type="radio" id="op1" name="tf" value="op1">
+  <label for="op1">This answer is correct</label><br>
+  <input type="text" id="op1" value="True"><br>
+  <input type="radio" id="op2" name="tf" value="op2">
+  <label for="op2">This answer is correct</label><br>
+  <input type="text" id="op2" value="False"><br><br>
+  <input type="submit" value="Save Question">
+ 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

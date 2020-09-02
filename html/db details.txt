@@ -1,0 +1,4 @@
+username:LMS
+password:lms@123
+host:localhost
+dbname:LMS
