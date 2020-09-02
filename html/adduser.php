@@ -289,7 +289,7 @@ margin-left:10%;
     <div class="row">
         <div class="left-column">
 
-            <h1 style="color:#90774f; padding-left: 40px;">Add User</h1></div></div>
+            <br><h1 style="color:#90774f; padding-left: 60px;">Add User</h1></div></div><br>
 
     <form action="" method="post">
         <div class="col-25">
