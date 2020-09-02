@@ -1,6 +1,6 @@
-# lms
-Internship
+# lms - Learning Management System
 
+Compete and Complete Together.
 
 Database Configurations are present in db_confiq.php.
 
