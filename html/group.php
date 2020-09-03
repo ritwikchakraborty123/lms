@@ -218,6 +218,7 @@ echo'</strong></span><br></h4>
 			<table class="table">
 				<thead>
 					<tr class="headings" style="font-size: 15px;">
+					    <th style="text-align: center"><input id="selectAll" name="selectAll" type="checkbox"></th>
 						<th style="text-align: center">USER</th>
 						<th style="text-align: center">EMAIL</th>
 						<th style="text-align: center">ROLE</th>
@@ -236,6 +237,7 @@ while($row = mysqli_fetch_array($result))
 
 
 					<tr>
+					    <td style="text-align: center"><input id="selectUser" name="selectUser" type="checkbox"></td>
 						<td style="text-align: center">'.ucfirst(strtolower($row['FIRSTNAME'])).' '.ucfirst(strtolower($row['LASTNAME'])).'</td>
 						<td style="text-align: center">'.$row['EMAIL'].'</td>
 						<td style="text-align: center">'.ucwords(strtolower($row['ROLE'])).'</td>
